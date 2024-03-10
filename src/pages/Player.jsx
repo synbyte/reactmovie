@@ -5,7 +5,7 @@ const Player = () => {
     return (
         <>
         <h1>hello playing {movieId}</h1>
-        <iframe src={`https://www.2embed.cc/embed/${movieId}`} width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <iframe src={`https://www.2embed.cc/embed/${movieId}`} width="100%" height="100%" frameborder="0" scrolling="no" allowFullScreen></iframe>
         </>
     )
 }

@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Player from "./pages/Player";
-
+import './index.css';
 export default function App() {
   return (
     <BrowserRouter>

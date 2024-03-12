@@ -4,10 +4,10 @@
 
 @layer base {
   html {
-    @apply bg-gray-900 text-white;
+    @apply text-white bg-gray-900;
   }
   body {
-    @apply flex justify-center align-middle;
+    @apply justify-center text-center align-middle;
   }
   
   

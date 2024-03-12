@@ -11,12 +11,12 @@ const MovieSearch = () => {
   }
 
   return (
-    <div>
-      <input type="text" value={query} onChange={(e) => setQuery(e.target.value)}
+    <div className='my-5'>
+      <input className='mx-5' type="text" value={query} onChange={(e) => setQuery(e.target.value)}
         />
-      <button onClick={searchMovie}>Search</button>
-      <ul>
-        list
+      <button className='px-3 bg-violet-700 rounded-md' onClick={searchMovie}>Search</button>
+      <ul className='grid grid-cols-2'>
+        
         {movies.map(movie => (
       <MovieCard key={movie.id} movie={movie}/>
         ))}

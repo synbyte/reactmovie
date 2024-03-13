@@ -12,11 +12,11 @@ const MovieSearch = () => {
 
   return (
     <>
-    <div className='flex justify-center py-5 mx-auto mb-3 bg-gray-800 shadow-lg shadow-violet-500'>
-      <div className='align-top bg-violet-700 rounded-full'>
+    <div className='flex justify-center py-5 mx-auto mb-3 bg-gray-800'>
+      <div className='align-top bg-violet-700 rounded-full transition hover:shadow-md hover:shadow-violet-500'>
         <input className='mx-5 my-1 text-center rounded-full' type="text" value={query} onChange={(e) => setQuery(e.target.value)}
         />
-      <button className='px-3 py-2 bg-violet-800 rounded-full' onClick={searchMovie}>Search</button>
+      <button className='px-3 py-2 bg-violet-800 rounded-full transition hover:scale-110 hover:shadow-lg shadow-black hover:bg-violet-500' onClick={searchMovie}>Search</button>
       </div>
       
     </div>

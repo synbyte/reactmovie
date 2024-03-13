@@ -11,17 +11,22 @@ const MovieSearch = () => {
   }
 
   return (
-    <div className='my-5'>
-      <input className='mx-5' type="text" value={query} onChange={(e) => setQuery(e.target.value)}
+    <>
+    <div className='flex justify-center py-5 mx-auto mb-3 bg-gray-800 shadow-lg shadow-violet-500'>
+      <div className='align-top bg-violet-700 rounded-full'>
+        <input className='mx-5 my-1 text-center rounded-full' type="text" value={query} onChange={(e) => setQuery(e.target.value)}
         />
-      <button className='px-3 bg-violet-700 rounded-md' onClick={searchMovie}>Search</button>
-      <ul className='grid grid-cols-2'>
-        
-        {movies.map(movie => (
-      <MovieCard key={movie.id} movie={movie}/>
-        ))}
-      </ul>
+      <button className='px-3 py-2 bg-violet-800 rounded-full' onClick={searchMovie}>Search</button>
+      </div>
+      
     </div>
+    <ul className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+        
+    {movies.map(movie => (
+  <MovieCard key={movie.id} movie={movie}/>
+    ))}
+  </ul>
+  </>
   )
 }
 

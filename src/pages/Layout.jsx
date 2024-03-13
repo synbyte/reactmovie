@@ -4,7 +4,7 @@ import React from 'react';
 const Layout = () => {
   return (
     <div className="">
-      <nav className="bg-violet-900">
+      <nav className="bg-gray-800">
         <ul>
           <li>
             <Link to="/">Home</Link>

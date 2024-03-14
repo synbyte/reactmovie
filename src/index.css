@@ -17,3 +17,7 @@
    @apply text-black;
  } 
 }
+
+#logo {
+  text-shadow: 0px 0px 7px white;
+}

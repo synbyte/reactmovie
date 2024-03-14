@@ -3,11 +3,13 @@ import MovieCard from './MovieCard.jsx'
 const MovieSearch = () => {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
+  const [header, setHeader] = useState('Trending Movies & Series');
 
   const searchMovie = async () => {
     const response = await fetch(`https://api.themoviedb.org/3/search/multi?api_key=15de90c28e3dea43848688ba2f7c8374&query=${query}&include_adult=false&language=en-US&page=1`);
     const data = await response.json();
     setMovies(data.results);
+    setHeader(`Search results for "${query}"`);
   }
 
   const orTrending = async () => {
@@ -47,6 +49,7 @@ const MovieSearch = () => {
         </div>
 
       </div>
+      <p className='text-3xl'>{header}</p>
       <ul className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
 
         {movies.map(movie => (

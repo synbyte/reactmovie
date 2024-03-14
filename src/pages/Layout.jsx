@@ -10,8 +10,8 @@ const Layout = () => {
     <div className="">
       <nav className="bg-gray-800">
         <ul>
-          <li>
-            <Link onClick={resetTrending} to="/">Home</Link>
+          <li id='logo' className="inline text-2xl font-bold text-gray-900">
+            <Link onClick={resetTrending} to="/">MoviePirate</Link>
           </li>
           
         </ul>

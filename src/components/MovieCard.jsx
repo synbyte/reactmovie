@@ -14,7 +14,7 @@ const MovieCard = ({ movie }) => {
       <div id="wrapper" className="py-5 mx-5 my-5 h-full">
         <div id="card" className='pt-5 h-full text-black bg-gray-300 rounded-xl border shadow-lg shadow-violet-700'>
         <img className="float-left relative right-4 bottom-4 mx-auto w-1/2 rounded-xl shadow-md shadow-violet-700" src={defaultImage()} alt={movie.title} />
-        <h1 id="title" className='mb-4 text-xl font-bold underline'>{movie.title || movie.name}</h1>
+        <h1 id="title" className='mb-4 text-xl font-bold underline keania-one-regular'>{movie.title || movie.name}</h1>
 
         <div id="overview" className='px-2 text-start'>{movie.overview}</div>
       </div></div>

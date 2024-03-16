@@ -8,7 +8,7 @@ const Layout = () => {
   }
   return (
     <div className="">
-      <nav className="font-mono bg-gray-800">
+      <nav className="bg-gray-800 keania-one-regular">
         <ul>
           <li id='logo' className="inline text-2xl font-bold text-gray-900">
             <Link onClick={resetTrending} to="/">Blueys Movies</Link>

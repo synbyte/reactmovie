@@ -41,7 +41,7 @@ const MovieSearch = () => {
 
   return (
     <>
-      <div className='flex justify-center py-5 mx-auto mb-3 bg-gray-800'>
+      <div className='flex justify-center py-5 mx-auto mb-3 bg-gray-800 shadow-md shadow-violet-800'>
         <div className='align-top bg-violet-700 rounded-full transition hover:shadow-md hover:shadow-violet-500'>
           <input onKeyDown={handleKeyPress} className='mx-5 my-1 text-center rounded-full' type="text" value={query} onChange={(e) => setQuery(e.target.value)}
           />

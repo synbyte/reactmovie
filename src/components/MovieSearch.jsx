@@ -41,7 +41,7 @@ const MovieSearch = () => {
 
   return (
     <>
-      <div className='flex justify-center py-5 mx-auto mb-3 bg-gray-800 shadow-md shadow-violet-800'>
+      <div className='flex fixed z-20 justify-center py-5 mx-auto mt-8 mb-3 w-full bg-gray-800 shadow-md shadow-violet-800'>
         <div className='align-top bg-violet-700 rounded-full transition hover:shadow-md hover:shadow-violet-500'>
           <input onKeyDown={handleKeyPress} className='mx-5 my-1 text-center rounded-full keania-one-regular' type="text" value={query} onChange={(e) => setQuery(e.target.value)}
           />
@@ -50,7 +50,7 @@ const MovieSearch = () => {
 
       </div>
       <p className='text-3xl keania-one-regular'>{header}</p>
-      <ul className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+      <ul className='grid mt-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
 
         {movies.map(movie => (
           <MovieCard key={movie.id} movie={movie} />

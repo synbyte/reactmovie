@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 const Player = () => {
     const {movieId} = useParams();
     return (
-        <>
+        <div className="h-screen">
         <h1>hello playing {movieId}</h1>
-        <iframe src={`https://www.2embed.cc/embed/${movieId}`} width="100%" height="100%" frameborder="0" scrolling="no" allowFullScreen></iframe>
-        </>
+        <iframe className="" src={`https://www.2embed.cc/embed/${movieId}`} width="100%" height="90%" frameborder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
     )
 }
 export default Player;
